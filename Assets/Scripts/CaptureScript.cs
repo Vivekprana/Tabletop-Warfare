@@ -29,7 +29,7 @@ public class CaptureScript : MonoBehaviour
         // Find Enemy Flag
         string flagName = "Flags/Flag" + thisTag;
         enemyFlag = transform.parent.Find(flagName).gameObject;
-        captureHealthBar = enemyFlag.transform.FindChild("HealthBar").gameObject;
+        captureHealthBar = enemyFlag.transform.Find("HealthBar").gameObject;
         cptBarScpt = captureHealthBar.GetComponent<HealthBar>();
         
     }
